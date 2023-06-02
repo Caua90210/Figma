@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+
+
+:root{
+    --cor-primaria: white;
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    background-color: var(--cor-primaria);
+    color: black;
+    box-sizing: border-box;
+    
+
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 9% 19%;
+    gap:40px;
+    
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+    padding-top: ;
+    position: absolute;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 50px;
+    font-size: 32px;
+    
+}
+.cabecalho{
+    padding: 2% 0% 0% 40% ;
+    
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+
+.espaco{
+    margin: 15px;
+}
+.apresentacao__conteudo__texto{
+    font-family: var(--fonte-secundaria);
+    font-size: 3.5rem;
+}
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.apresentacao__links__navegacao{
+    /* background-color: #BF3030;*/
+    width: 50%;
+    text-align: center;
+    border-radius: 13px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #F28705;
+    padding: 21.5px 0;
+    color: white;
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    transition: transform .3s linear;
+    
+}
+.apresentacao__links__link:hover{
+    transform: scale(1.2);
+    background-color: var(--cor-hover);
+    cursor: pointer;
+    height: 100%;
+}
+.foto_kaneda{
+    background-image: url(/Kaneda-info/img/kaneda.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+    border-radius: 32px;
+    left: 100px;
+}
+.image{
+    
+    width: 400px;
+    height: 500px;
+    border-radius: 32px;
+    left: 200px;
+}
+.icons{
+  width: 30px;
+  height: 30px;
+    
+}
+
+strong{
+    color:#F28705  ;
+}
+.rodape{
+     background-color: #FFFBF7;
+     color: black;
+     text-align: center;
+     padding: 24px;
+     font-family: var(--fonte-secundaria);
+    
+}
+@media (max-width: 1200px){
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 9%;
+    }
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
