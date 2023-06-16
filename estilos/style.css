@@ -26,7 +26,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 9% 19%;
+    margin: 5% 10%;
     gap:40px;
     
 }
@@ -35,31 +35,39 @@ body{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    
+    padding-left: 10px;
+   
+   
 }
 .apresentacao__conteudo__titulo{
-    font-size: 2.25rem;
-    font-family: var(--fonte-principal);
-    padding-top: ;
+    font-size: 3.00rem;
+    font-family: 'Inter', sans-serif;
     position: absolute;
+    left: 130px;
+    top: 40px;
+    
+
+    
 }
 .cabecalho__menu{
     display: flex;
-    gap: 50px;
+    gap: 30px;
     font-size: 32px;
+    padding-left: 10px;
     
 }
 .cabecalho{
-    padding: 2% 0% 0% 40% ;
+    padding: 3% 0% 0% 40% ;
     
 }
 .cabecalho__menu__link{
-    font-family: var(--fonte-secundaria);
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: var(--cor-secundaria);
     text-decoration: none;
+    
 }
 
 
@@ -67,18 +75,19 @@ body{
     margin: 15px;
 }
 .apresentacao__conteudo__texto{
-    font-family: var(--fonte-secundaria);
-    font-size: 3.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 .apresentacao__links{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: center;
+    
     gap: 32px;
 }
 .apresentacao__links__subtitulo{
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
 }
@@ -90,12 +99,12 @@ body{
     text-decoration: none;
     font-size: 1.5rem;
     background-color: #F28705;
-    padding: 21.5px 0;
+    padding: 13px 0;
     color: white;
-    font-family: var(--fonte-secundaria);
+    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
-    gap: 13px;
+    gap: 10px;
     transition: transform .3s linear;
     
 }
@@ -130,25 +139,28 @@ strong{
     color:#F28705  ;
 }
 .rodape{
-     background-color: #FFFBF7;
+     
      color: black;
      text-align: center;
      padding: 24px;
      font-family: var(--fonte-secundaria);
     
 }
-@media (max-width: 1200px){
-    .apresentacao{
-        flex-direction: column-reverse;
-        padding: 9%;
-    }
-    .cabecalho{
-        padding: 10%;
-    }
-    .cabecalho__menu{
-        justify-content: center;
-    }
-    .apresentacao__conteudo{
-        width: auto;
-    }
+.botao_cima{
+    width: 15%;
+    text-align: center;
+    border-radius: 13px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    background-color: #F28705;
+    border: none;
+    padding: 11px 0px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    gap: 10px;
+    transition: transform .3s linear;
+    position: absolute;
+    left: 1040px;
+    top: 30px;
 }
